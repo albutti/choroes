@@ -1,0 +1,143 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.logo {
+	width: 200px;
+	height:200px;
+}
+
+.menu_site {
+	font-size: 30px;
+}
+
+.menu_site > a {
+	text-decoration: none;
+	padding: 5px 30px;
+	color: black;
+}
+
+header {
+	display: flex;
+    flex-direction: column;
+    text-align-last: justify;
+    align-items: center;	
+	background-color: orange;
+}
+
+.menu_site > a:hover {
+	background-color: white;
+}
+
+/** slides **/
+
+.secaoBlog {
+  text-align: center;
+}
+
+.listaDeArtigos-artigo {
+  text-align: left;
+  padding-bottom: 2em;
+  max-width: 815px;
+  display: inline-block;
+  white-space: normal;
+}      
+
+.listaDeArtigos {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.listaDeArtigos-item {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: none;
+}
+
+.listaDeArtigos-artigo-img {
+	width: 600px;
+	height: 400px;
+}
+
+.listaDeArtigos-item:not(:target):first-child{
+  display: inline-block;
+}
+
+.listaDeArtigos-item:target {
+  display: inline-block;
+}
+
+.listaDeArtigos-artigo-img {
+  width: 100%;
+  display: block;
+}
+/* Apenas para diferenciar as imagens */
+
+.listaDeArtigos-artigo-link {
+  color: #EB5757;
+  font-weight: bold;
+}
+
+.listaDeArtigos-slider li {
+  display: inline-block;
+  text-align: center;
+}
+
+.listaDeArtigos-slider-item--ativo {
+  background: hsla(200, 70%, 0%, .6);
+}
+
+/** Geralda **/
+
+.geralda {
+	width: 200px;
+	height:200px;
+	border-radius: 100px;
+}
+
+.artigo_geralda {
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+}
+
+.artigo_geralda > p {
+	margin: 10px;
+	padding: 10px;
+	border-left: solid 2px black;	
+}
+
+/** Noticias **/
+
+.grupo_noticias {
+	display: flex;
+    justify-content: center;
+}
+
+.noticia {
+	margin: 5px;
+}
+
+.noticias {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+/** rodape **/
+
+footer {
+    background-color: orange;
+    padding: 20px;
+}
+
+footer > section {
+	display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+h4 {
+	text-align: center;
+	margin-bottom: 10px;
+}
